@@ -9,6 +9,8 @@ your files are already DNG (no RAW->DNG conversion is performed).
 Requires ExifTool: brew install exiftool
 """
 
+from __future__ import annotations
+
 import argparse
 import shutil
 import subprocess
