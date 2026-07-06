@@ -43,7 +43,7 @@ def process_file(
     output_dir: Path | None,
     backup: bool,
 ) -> tuple[bool, str]:
-    cmd = [exiftool_path, *tags]
+    cmd = [exiftool_path, "-m", *tags]
 
     if output_dir is not None:
         dest = output_dir / filepath.name
